@@ -32,8 +32,7 @@ export default function Rectangle({
             y: e.target.y(),
           });
         }}
-        // eslint-disable-next-line no-unused-vars
-        onTransformEnd={(e) => {
+        onTransformEnd={() => {
           const node = shapeRef.current;
           const scaleX = node.scaleX();
           const scaleY = node.scaleY();
